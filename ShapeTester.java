@@ -1,6 +1,9 @@
 public class ShapeTester{
 
-
+    /**
+     * Tests the shape classes and exception handling.
+     * @param args command-line arguments not used.
+     */
     public static void main(String[] args){
         try{
             Shape square = new Square(-5);
