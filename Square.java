@@ -2,9 +2,10 @@ public class Square implements Shape {
     private double side;
 
     /**
-     *
+     *Creates a Square object with the specified side length.
      * @param side
-     */
+     * @throw InvalidGeometricalDimensionException if side is less than or equal to zero.
+     */@
     public Square(double side){
         if (side <=0){
             throw new InvalidGeometricalDimensionException();
@@ -14,8 +15,8 @@ public class Square implements Shape {
     }
 
     /**
-     *
-     * @return
+     *Calculate the area of the square
+     * @return the area of the square
      */
     @Override
     public double getArea(){
@@ -23,8 +24,8 @@ public class Square implements Shape {
     }
 
     /**
-     *
-     * @return
+     * Calculate the perimeter of the square
+     * @return the perimeter of the square
      */
     @Override
     public double getPerimeter(){
